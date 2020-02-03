@@ -9,35 +9,71 @@
         <nav>
           <a href="#">
           <img src="img/logo.svg" width="140" height="71" alt=
-            "Логотип города «Sedona»">
+            "логотип города седона">
           </a>
           <ul>
-            <li><a href="info.html">Информация</a></li>
-            <li><a href="foto.html">Фото и видео</a></li>
-            <li><a href="map.html">Карта штата</a></li>
-            <li><a href="hotels.html">Гостиницы</a></li>
+            <li><a href="info.html">информация</a></li>
+            <li><a href="foto.html">фото и видео</a></li>
+            <li><a href="map.html">карта штата</a></li>
+            <li><a href="hotels.html">гостиницы</a></li>
           </ul>
          </nav>
       </header>
       <main>
+        <h1 class="visually-hidden">добро пожаловать в седону</h1>
 
-        <h1>Добро пожаловать в Седону</h1>
         <section>
-          <img src="img/welcome.svg" width="459" height="353" alt="Добро
-            пожаловать">
-          <img src="img/background-photo.jpg" width="1200" height="773">
-          <p>Седона — небольшой городок в Аризоне,<br>
-            заслуживающий большего!</p>
-          <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+          <h2 class="visually-hidden">добро пожаловать</h2>
+           <img src="img/welcome.svg" width="459" height="353" alt="добро
+             пожаловать">
+           <img src="img/background-photo.jpg" width="1200" height="773" alt=
+             "фоновая фотография">
+           <p>Седона — небольшой городок в Аризоне,<br>
+             заслуживающий большего!</p>
+           <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд
+              каньон!<p>
         </section>
 
         <section>
-          <h2>Поиск гостиницы в Седоне</h2>
-            <p>Заинтересовались?</p>
-            <p>Укажите предполагаемые даты поездки,<br>
+          <h2 class="visually-hidden">поиск гостиницы в седоне</h2>
+            <p>Заинтересовались?<br>
+              Укажите предполагаемые даты поездки,<br>
               и мы покажем вам лучшие предложения гостиниц в седоне
-            <button type= "button">Поиск гостиницы в Седоне</button></p>
+            </p>
+            <button type="button">поиск гостиницы в седоне</button>
+          <form action="#" method="post">
+            <p>
+              <label for="arrive-date">дата заезда:</label>
+              <input id="arrive-date" type="text" name="arrive" value=""
+                placeholder="24 апреля 2017">
+              <img src="img/calendar.svg" width="21" height="22" alt=
+                "Календарь">
+            </p>
+            <p>
+              <label for="depature-date">дата выезда:</label>
+              <input id="depature-date" type="text" name="depature" value=""
+                placeholder="4 июля 2017">
+              <img src="img/calendar.svg" width="21" height="22" alt=
+                "Календарь">
+            </p>
+            <p>
+              <label for="adults">взрослые:</label>
+              <input id="adults" type="number" min="1" step="1" value="2">
+            </p>
+            <p>
+              <label for="children">дети:</label>
+              <input id="children" type="number" min="0" step="1" value="0">
+            </p>
+            <button type="submit">найти</button>
+          </form>
+        </section>
+        
         <section>
+          <h2 class="visually-hidden">карта</h2>
+          <p>
+            <img src="img/map.jpg" width="1200" height="594" alt="карта">
+          </p>
+        </section>
       </main>
       <footer>
         <p>
@@ -53,7 +89,8 @@
         </div>
         <p>
           Website by
-          <a href="#">Лого HTMLA</a>
+          <a href="https://htmlacademy.ru/intensive/htmlcss"><img src=
+            "img/logo-htmla.png" widht="115"height="41" alt="Лого HTMLA"></a>
         </p>
       </footer>
   </body>
