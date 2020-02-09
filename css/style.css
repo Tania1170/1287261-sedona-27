@@ -1,0 +1,166 @@
+body {
+  margin: 0;
+  padding-left: 40px;
+  padding-right:40px;
+
+  font-family: "PT-Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: normal;
+  color: #000000;
+  text-transform: uppercase;
+
+  background-color: #ffffff;
+  background-image: url(background-photo.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.inner-page {
+  color: #ffffff;
+
+  background-color: #000000;
+  background-image: url(filter-background.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: none;
+}
+.button a{
+  font: inherit;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: bold;
+
+  background-color: #81b3d2;
+}
+
+.button .button-information:hover {
+  background-color: #669ec0;
+}
+
+.button .button-information:focus {
+  color: rgba(255,255,255,0.3);
+
+  background-color: #5496bd;
+}
+
+.button .button-reservation {
+  background-color: #766357;
+}
+
+.button .button-reservation:hover {
+  background-color: #604e43;
+}
+
+.button .button-reservation:focus {
+  color: rgba(255,255,255,0.3);
+
+  background-color: #503e33;
+}
+
+ .hotels ol{
+   list-style: none;
+ }
+
+.hotels h2 {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  text-align: left;
+}
+h2 a {
+  color:#000000;
+}
+
+h2 a:hover {
+  color: #81b3d2;
+}
+
+h2 a:focus {
+  color: rgba(0,0,0,0.3);
+}
+
+.rating {
+  color: #666666;
+}
+
+.main-navigation {
+  background-color: #ffffff;
+}
+.site-navigation a {
+  color: #000000;
+  font-weight: bold;
+  line-height: 26px;
+  list-style: none;
+}
+
+.site-navigation a:hover {
+  color: #81b3d2;
+}
+
+.site-navigation a:focus {
+  color: rgba(0,0,0,0.3);
+}
+
+.site-navigation .site-navigation-current {
+  color: #766357;
+}
+ .title-info {
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 36px;
+  text-align: center;
+}
+
+ .text-info {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 24px;
+  text-align: center;
+  color: #333333;
+}
+
+.info-introduction {
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+  text-align: center;
+  color: #000000;
+}
+
+.info-advantages {
+  font-size: 14;
+  font-weight:normal;
+  line-height: 24;
+  text-align: center;
+  color: #333333;
+}
+
+
+.main-footer {
+  background-color: #ffffff;
+}
+.footer-contacts {
+  font-weight: bold;
+  }
+
+  .footer-copyright b {
+    font-size: 14px;
+    font-weight: normal;
+  }
+    .footer-copyright a:hover {
+    color: #81b3d2;
+  }
+  .footer-copyright a:focus {
+    color: #bdbbbc;
+  }
+  .footer-social ul {
+    list-style: none
+  }
+
+  .social-button {
+    color: #000000;
+  }
