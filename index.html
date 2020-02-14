@@ -9,6 +9,7 @@
   </head>
   <body>
      <header class="main-header">
+       <div class="container">
         <nav class="main-navigation">
           <a  class="main-header-logo" href="#">
           <img src="img/logo.svg" width="140" height="71" alt=
@@ -21,18 +22,22 @@
             <li><a href="catalog.html">гостиницы</a></li>
           </ul>
          </nav>
+       </div>
       </header>
-      <main clas="container">
+      <main>
+        <div class="container">
         <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
 
-        <section>
+        <section class="welcome-photo">
           <h2 class="visually-hidden">Добро пожаловать</h2>
-          <div class="welcome">
+           <div class="background-index">
+           <img src="img/background-photo.jpg" width="1200" height="773" alt=
+           "Фоновая фотография">
+           </div>
+            <div class="welcome">
              <img src="img/welcome.svg" width="459" height="353" alt="Добро
              пожаловать">
           </div>
-             <img src="img/background-photo.jpg" width="1200" height="773" alt=
-             "Фоновая фотография">
           <div class="info">
            <p class="info-introduction">Седона — небольшой городок в Аризоне,<br>
              заслуживающий большего!</p>
@@ -40,6 +45,7 @@
               каньон!</p>
           </div>
         </section>
+      </div>
 
         <section>
           <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
@@ -77,14 +83,18 @@
           </form>
         </section>
 
-        <section>
+       <div class="container">
+        <section class="map">
           <h2 class="visually-hidden">Карта</h2>
           <p>
             <img src="img/map.jpg" width="1200" height="594" alt="Карта">
           </p>
         </section>
+      </div>
       </main>
       <footer class="main-footer">
+        <div class="container">
+          <div class="main-footer-wrapper">
         <p class="footer-contacts">
           #visitSEDONA<br>
           Тел: +7(495) 666-02-66
@@ -101,6 +111,8 @@
           <a href="https://htmlacademy.ru/intensive/htmlcss"><img src=
             "img/logo-htmla.png" widht="115"height="41" alt="Лого HTMLA"></a>
         </p>
+      </div>
+    </div>
       </footer>
   </body>
 </html>

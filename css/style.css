@@ -164,3 +164,89 @@ h2 a:focus {
   .social-button {
     color: #000000;
   }
+
+  .container {
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-write: 40px;
+  }
+
+  .main-navigation {
+    display:flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: #666666;
+  }
+  .main-header-logo {
+    order: 1;
+    width: 140px;
+    height: 71px;
+    margin-left: 51px;
+  }
+.site-navigation {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 478px;
+
+}
+.welcome-photo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.welcome {
+  width: 459px;
+  background-color: #666666;
+}
+
+.map {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.photo-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.offer-list {
+  display: flex;
+  flex-direction: column;
+  margin-botton: 0;
+ background-color: #fbded8;
+ min-height: 454px;
+}
+.hotel-offer {
+  min-height: 150px;
+  margin-left: 72px;
+
+
+}
+
+.main-footer-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 120px;
+  background-color: #666666;
+  margin-top: 0;
+}
+
+.footer-contacts {
+  widht: 223px;
+}
+
+.footer-social {
+  widht: 150px;
+}
+.footer-copyright {
+  widht: 197px;
+}
+.background-index: {
+margin-bottom: 56px;
+}
