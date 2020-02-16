@@ -9,12 +9,12 @@
   </head>
   <body>
      <header class="main-header">
-       <div class="container">
-        <nav class="main-navigation">
-          <a  class="main-header-logo" href="#">
-          <img src="img/logo.svg" width="140" height="71" alt=
-            "Логотип города Седоны">
-          </a>
+          <div class="container">
+            <nav class="main-navigation">
+              <a  class="main-header-logo" href="#">
+              <img src="img/logo.svg" width="140" height="71" alt=
+                "Логотип города Седоны">
+              </a>
           <ul class="site-navigation">
             <li><a href="info.html">информация</a></li>
             <li><a href="foto.html">фото и видео</a></li>
@@ -23,39 +23,43 @@
           </ul>
          </nav>
        </div>
+
       </header>
       <main>
         <div class="container">
         <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
 
-        <section class="welcome-photo">
+        <section class="welcome">
           <h2 class="visually-hidden">Добро пожаловать</h2>
-           <div class="background-index">
-           <img src="img/background-photo.jpg" width="1200" height="773" alt=
-           "Фоновая фотография">
-           </div>
-            <div class="welcome">
+             <div class="welcome-photo">
              <img src="img/welcome.svg" width="459" height="353" alt="Добро
              пожаловать">
-          </div>
+        </section>
+      </div>
+        <div class="container">
+        <section class="advantages">
           <div class="info">
            <p class="info-introduction">Седона — небольшой городок в Аризоне,<br>
              заслуживающий большего!</p>
            <p class="info-advantages">Рассмотрим 5 причин, по которым Седона круче, чем гранд
               каньон!</p>
-          </div>
+        </div>
         </section>
-      </div>
+       </div>
 
-        <section>
+      <div class="container">
+        <section class="search">
           <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
-          <div class="info">
+          <div class="info-search">
             <p class="title-info">Заинтересовались?</p>
             <p class="text-info">Укажите предполагаемые даты поездки,<br>
               и мы покажем вам лучшие предложения гостиниц в седоне
             </p>
           </div>
-            <button type="button">поиск гостиницы в седоне</button>
+            <p class="button">
+            <button class="button-search">поиск гостиницы в седоне</button>
+          </p>
+          <p>
           <form action="#" method="post">
             <p>
               <label for="arrive-date">дата заезда:</label>
@@ -79,9 +83,12 @@
               <label for="children">дети:</label>
               <input id="children" type="number" min="0" step="1" value="0">
             </p>
-            <button type="submit">найти</button>
+            <p class="button">
+            <button class="button-find" type="submit">найти</button>
+            </p>
           </form>
         </section>
+      </div>
 
        <div class="container">
         <section class="map">
@@ -91,9 +98,10 @@
           </p>
         </section>
       </div>
+
       </main>
+      <div class="container">
       <footer class="main-footer">
-        <div class="container">
           <div class="main-footer-wrapper">
         <p class="footer-contacts">
           #visitSEDONA<br>
@@ -112,7 +120,7 @@
             "img/logo-htmla.png" widht="115"height="41" alt="Лого HTMLA"></a>
         </p>
       </div>
-    </div>
       </footer>
+    </div>
   </body>
 </html>
