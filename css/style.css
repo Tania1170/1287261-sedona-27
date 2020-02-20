@@ -203,21 +203,48 @@ h2 a:focus {
     padding-right: 40px;
 }
 
-
-.main-header-logo {
-    order: 1;
-    width: 140px;
-    height: 71px;
-    margin-left: 51px;
+.main-header {
+  position: relative;
 }
 
-.main-navigation{
+
+.main-header-logo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 140px;
+    height: 71px;
+}
+
+.main-navigation {
+  display: flex;
+  width: 1200px;
+  justify-content: center;
+  background-color: #ffffff;
+}
+
+
+
+.site-navigation{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 56px;
+    width: 1056px;
 
     background-color: #ffffff;
+}
+
+.site-navigation-item {
+  text-align: left;
+  width: 264px;
+}
+
+ .site-navigation-item .right {
+ text-align: right;
 }
 
 .welcome {
@@ -227,7 +254,19 @@ h2 a:focus {
   background-image: url(../img/background-photo.jpg);
   width: 100%;
   height: 508px;
+  position: relative;
 }
+ .welcome::after {
+   content: "";
+   position: absolute;
+   width: 1203px;
+   height: 59px;
+   background: url(../img/polygon.png) no-repeat top left;
+   left: 50%;
+   transform: translateX(-50%);
+   bottom: center;
+   margin-top: 451px;
+  }
 
 .welcome-photo{
   padding-top: 76px;
@@ -281,8 +320,14 @@ h2 a:focus {
 .footer-copyright b {
   font-size: 14px;
   font-weight: normal;
-  padding-right: 8px;
 }
+
+.logo-htmla {
+  width: 115px;
+  height: 41px;
+}
+
+
 
 .footer-copyright a:hover {
   color: #81b3d2;
@@ -310,12 +355,24 @@ h2 a:focus {
   background-color: #81b3d2;
 }
 
+.social-button:active {
+  background-color: #81b3d2;
+}
+
 .social-button:hover {
   background-color: #669ec0;
 }
 
 .social-button:focus {
   background-color: #5496bd;
+}
+
+.social-button:active path {
+  fill: #ffffff;
+}
+
+.social-button:hover path {
+  fill: #ffffff;
 }
 
 .social-button:focus path {

@@ -8,23 +8,22 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
+    <div class="container">
      <header class="main-header">
-          <div class="container">
-            <nav class="main-navigation">
-              <a  class="main-header-logo" href="#">
+            <a  class="main-header-logo" href="#">
               <img src="img/logo.svg" width="140" height="71" alt=
                 "Логотип города Седоны">
               </a>
+              <nav class="main-navigation">
           <ul class="site-navigation">
-            <li><a href="info.html">информация</a></li>
-            <li><a href="foto.html">фото и видео</a></li>
-            <li><a href="map.html">карта штата</a></li>
-            <li><a href="catalog.html">гостиницы</a></li>
+            <li class="site-navigation-item"><a href="info.html">информация</a></li>
+            <li class="site-navigation-item"><a href="foto.html">фото и видео</a></li>
+            <li class="site-navigation-item"><div class="right"><a href="map.html">карта штата</a></div></li>
+            <li class="site-navigation-item"><div class="right"><a href="catalog.html">гостиницы</a></li>
           </ul>
          </nav>
-       </div>
-
       </header>
+    </div>
       <main>
         <div class="container">
         <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
@@ -113,7 +112,6 @@
            <li><a class="social-button" href="#"><span class="visually-hidden">Твиттер</span>
              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                 width="17" height="15" viewBox="0 0 17 15">
-                 <image width="17" height="15" overflow="visible" xlink:href="t.png"/>
                  <path fill="#FFF" d="M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481
                    2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006
                     1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887
@@ -135,7 +133,6 @@
            </a></li>
            <li><a  class="social-button" href="#"><span class="visually-hidden">Ютуб</span>
              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="16" viewBox="0 0 20 16">
-                 <image width="20" height="16" overflow="visible" xlink:href="youtube.png"/>
                  <path fill="#FFF" d="M17 0H3C1.35 0 0 1.35 0 3v10c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM6.027 11.998V4.002L15.014 8l-8.987 3.998z"/>
              </svg>
 
@@ -145,8 +142,10 @@
         </div>
        <p class="footer-copyright">
          <b>Website by</b>
-           <a href="https://htmlacademy.ru/intensive/htmlcss">
-             <img src="img/logo-htmla.png" widht="115"height="41" alt="Лого HTMLA"></a>
+            <a href="https://htmlacademy.ru/intensive/htmlcss">
+            <img src="img/logo-htmla.svg" width="115" height="41" alt="Логотип НТМЛА">
+
+           </a>
       </p>
     </div>
       </footer>
