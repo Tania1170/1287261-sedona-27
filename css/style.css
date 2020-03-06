@@ -55,7 +55,7 @@ a {
   background-color: #81b3d2;
   border-style: none;
   margin-bottom: 0;
-  margin-top: 55px;
+  margin-top: 43px;
 }
 
 .button .button-search:hover{
@@ -598,12 +598,19 @@ h3 {
   left: 430px;
   fill: rgba(0,0,0,0,3);
 }
- .reservation-item .guests{
-  width:226px;
+
+ .reservation-item-adults{
+   display: flex;
+  width:234px;
   height: 38px;
+  position:relative;
+  padding-top: 5px;
 }
-.guests .children-guests {
+.reservation-item-children {
+  display: flex;
+  width:180px;
   height: 38px;
+  padding-top: 5px;
 }
 
 .reservation-item label {
@@ -627,9 +634,19 @@ h3 {
   font: inherit;
   font-weight: bold;
   font-size:14px;
+  color: #000000;
 }
 
-.guests label {
+.reservation-item-adults label {
+  display:block;
+  width:112px;
+  height: 38px;
+  padding-top: 12px;
+  text-align: left;
+  font: inherit;
+  font-weight: bold;
+}
+.reservation-item-children label {
   display:block;
   width:112px;
   height: 38px;
@@ -639,9 +656,9 @@ h3 {
   font-weight: bold;
 
 }
-.guests input {
+.reservation-item-adults input {
 box-sizing: border-box;
-width: 114px;
+width: 118px;
 height: 38px;
 padding-left: 52px;
 margin-bottom: 25px;
@@ -652,95 +669,94 @@ font-size: 14px;
 font-weight: bold;
 }
 
-.guests {
-  display: flex;
-  justify-content: space-around;
+.reservation-item-children input {
+  box-sizing: border-box;
+  width: 118px;
   height: 38px;
-  margin-top: -12px;
-  position: relative;
+  padding-left: 52px;
+  margin-bottom: 25px;
+  border: none;
+  background-color: #f2f2f2;
+  font: inherit;
+  font-size: 14px;
+  font-weight: bold;
+
 }
 
-
-.guests .less {
+.reservation-item-adults .less {
   position: absolute;
-  top: 5px;
+  top: 12px;
   left: 136px;
   font-size: 21px;
   font-weight: normal;
   color: rgba(0,0,0,0.3);
 }
 
-.guests .more {
+.reservation-item-adults .more {
   position:absolute;
-  top: 7px;
+  top: 12px;
   left: 195px;
   font-size: 21px;
   font-weight: normal;
   color: rgba(0,0,0,0.3);
 }
 
-.guests .less:hover {
+.reservation-item-adults .less:hover {
   color: #000000;
 }
 
-.guests .less:focus {
+.reservation-item-adults .less:focus {
   color: #81b3d2;
 }
 
-.guests .more:hover {
+.reservation-item-adults .more:hover {
   color: #000000;
 }
-.guests .more:focus {
+.reservation-item-adults .more:focus {
   color: #81b3d2;
 }
 
-.children-guests {
+.reservation-item-children {
   display:flex;
   position:relative;
 }
-.children-guests .less-children {
+.reservation-item-children .less {
  position:absolute;
-top: 5px;
-left: 136px;
+top: 12px;
+left: 85px;
 font-size: 21px;
 font-weight: normal;
 color: rgba(0,0,0,0.3);
 }
 
-.children-guests .more-children {
+.reservation-item-children .more {
 position: absolute;
-top: 7px;
-left: 195px;
+top: 12px;
+left: 150px;
 font-size: 21px;
 font-weight: normal;
 color: rgba(0,0,0,0.3);
 }
 
-.more-children {
-  font-size: 21px;
-  font-weight: normal;
-}
-
-.less-children {
-  font-size: 21px;
-  font-weight: normal;
-}
-.more-children:hover {
+.reservation-item-children .more:hover {
   color: #000000;
 }
-.more-children:focus {
+.reservation-children .more:focus {
   color: #81b3d2;
 }
-.less-children:hover {
+.reservation-item-children .less:hover {
   color: #000000;
 }
 
-.less-children:focus {
+.reservation-item-children .less:focus {
   color: #81b3d2;
 }
-.children-guests label {
-  width: 64px;
-  padding-left:51px ;
+.reservation-item-children input:hover {
+  background-color: #ebebeb;
+}
+.reservation-item-children input:focus {
+  background-color: #ffffff;
+  border: transparent;
 }
 
 .reservation-item input:hover {
@@ -752,11 +768,11 @@ background-color: #ebebeb;
   border: transparent;
 }
 
-.guests input:hover {
+.reservation-item-adults input:hover {
   background-color: #ebebeb;
   border-color: #ffffff;
 }
-.guests input:focus {
+.reservation-item-adults input:focus {
   background-color: #ffffff;
   border-color: #e5e5e5;
 }
@@ -764,7 +780,7 @@ background-color: #ebebeb;
 .map {
  display: flex;
  justify-content: center;
- height: 472px;
+ height: 476px;
 
 }
 
