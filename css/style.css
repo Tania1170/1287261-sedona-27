@@ -638,11 +638,12 @@ h3 {
 }
 
 .reservation-item input {
+  outline: none;
   box-sizing: border-box;
   width: 346px;
   height: 38px;
   padding-left: 12px;
-  border: none;
+  border: 2px solid transparent;
   background-color: #f2f2f2;
   font: inherit;
   font-weight: bold;
@@ -671,11 +672,12 @@ h3 {
 }
 .reservation-item-adults input {
 box-sizing: border-box;
+outline: none;
+border: 2px solid transparent;
 width: 118px;
 height: 38px;
 padding-left: 52px;
 margin-bottom: 25px;
-border: none;
 background-color: #f2f2f2;
 font: inherit;
 font-size: 14px;
@@ -684,11 +686,12 @@ font-weight: bold;
 
 .reservation-item-children input {
   box-sizing: border-box;
+  outline: none;
+  border: 2px solid transparent;
   width: 118px;
   height: 38px;
   padding-left: 52px;
   margin-bottom: 25px;
-  border: none;
   background-color: #f2f2f2;
   font: inherit;
   font-size: 14px;
@@ -769,7 +772,7 @@ color: rgba(0,0,0,0.3);
 }
 .reservation-item-children input:focus {
   background-color: #ffffff;
-  border: transparent;
+  border-color: #ebebeb;
 }
 
 .reservation-item input:hover {
@@ -784,7 +787,6 @@ background-color: #ebebeb;
 
 .reservation-item-adults input:hover {
   background-color: #ebebeb;
-  border-color: #ffffff;
 }
 .reservation-item-adults input:focus {
   background-color: #ffffff;
