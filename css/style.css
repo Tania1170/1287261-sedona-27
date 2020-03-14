@@ -17,12 +17,19 @@ a {
 }
 
 .visually-hidden {
-  display:none;
+  position:absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin:-1px;
+  border: 0;
+  padding: 0;
+  white-space:nowrap;
+  clip-path: inset(100%);
+  overflow: hidden;
 }
 
-.filter-option .visually-hidden {
-  margin-left: -10000;
-}
+
 .button a{
   font: inherit;
   color: #ffffff;
@@ -168,10 +175,10 @@ a {
 .sorting-item .sorting-item-current {
   color: #81b3d2;
 }
-.icon-dir {
+.icon-up-down-dir {
   display: flex;
   justify-content: space-between;
-  width: 34px;
+  width: 36px;
 }
 .icon-up-down-dir svg {
   fill: #cacaca;
@@ -273,16 +280,47 @@ h2 a:focus {
   padding-bottom: 45px;
 }
 
-.rating {
- margin-top: 40px;
+.hotel-rating p {
+ margin-top: 60px;
   color: #666666;
   font-size:14px;
   line-height: 21px;
   background-color: #f2f2f2;
-  padding-top: 5px;
-  padding-bottom: 6px;
-  padding-right: 13px;
-  padding-left: 16px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-right: 12px;
+  padding-left: 11px;
+  position: relative;
+}
+.hotel-rating .stars-rate-four::before {
+  content:"";
+  position:absolute;
+  background-image: url(../img/star.svg);
+  width: 72px;
+  height:17px;
+   top: -62px;
+   left:42px;
+  background-repeat: repeat-x;
+}
+.hotel-rating .stars-rate-three::before {
+  content:"";
+  position: absolute;
+  background: url(../img/star.svg);
+  width: 54px;
+  height:17px;
+  top: -62px;
+  left:42px;
+  background-repeat: repeat-x;
+}
+.hotel-rating .stars-rate-two::before{
+  content:"";
+  position: absolute;
+  background-image: url(../img/star.svg);
+  width: 36px;
+  height:17px;
+   top: -62px;
+   left:42px;
+  background-repeat: repeat-x;
 }
 
 .site-navigation {
@@ -337,8 +375,7 @@ h2 a:focus {
 }
 .info {
 padding-top:38px;
-
-  padding-bottom: 30px;
+padding-bottom: 30px;
 }
 
 .info-introduction {
@@ -347,10 +384,7 @@ padding-top:38px;
   line-height: 26px;
   text-align: center;
   color: #000000;
-
-
 }
-
 .info-advantages {
   font-size: 14px;
   font-weight: normal;
@@ -394,7 +428,7 @@ padding-top:38px;
 .description h3{
   margin: 0;
 }
-.description-white {
+.advantages-item-white {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -409,7 +443,7 @@ padding-top:38px;
   padding-bottom: 10px;
   color: #ffffff;
 }
-.description-white .numeration {
+.advantages-item-white .numeration {
   color: #000000;
 }
 
@@ -421,7 +455,7 @@ h3 {
   color: #ffffff;
 }
 
-.description-white h3 {
+.advantages-item-white h3 {
   color: #000000;
   margin: 0;
 }
@@ -455,22 +489,72 @@ h3 {
   margin-left: 0;
 }
 
-.service-item {
+.service-item-housing {
   width: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-}
-
-.services .service-item {
   padding-top: 60px;
+  position:relative;
+}
+.service-item-housing::after{
+  content:"";
+  position: absolute;
+  background: url(../img/icon-1.svg) no-repeat top;
+  width: 75px;
+  height: 72px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-.service-item p {
+.service-item-food {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 60px;
+  position:relative;
+}
+.service-item-food::after{
+  content:"";
+  position: absolute;
+  background: url(../img/icon-3.svg) no-repeat top;
+  width: 74px;
+  height: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.service-item-souveniers {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 60px;
+  position:relative;
+
+}
+.service-item-souveniers::after {
+  content:"";
+  position: absolute;
+  background: url(../img/icon-2.svg) no-repeat top;
+  width: 64px;
+  height: 76px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.services p {
   margin-bottom: 0;
   margin-top:0;
 }
+.services h4 {
+  padding-top: 75px;
+}
+
+
 
 .container {
     width: 1200px;
@@ -516,11 +600,12 @@ h3 {
 
 .site-navigation-item {
   text-align: left;
-  width: 264px;
+  width: 25%;
 }
 
- .site-navigation-item .right {
+ .site-navigation-item--right {
  text-align: right;
+ width: 25%;
 }
 
 .welcome {
@@ -571,8 +656,12 @@ h3 {
 .title-info {
   margin-top: 0;
 }
+.modal-close {
+  display: none;
+}
 
 .reservation {
+  z-index: 3;
   position: absolute;
   top: 100%;
   left: 50%;
@@ -797,10 +886,14 @@ background-color: #ebebeb;
  height: 476px;
 }
 .map p {
+  position:absolute;
+  z-index: 1;
   margin:0;
-
 }
-
+.map iframe{
+  position:relative;
+  z-index: 2;
+}
 .filters {
   display: flex;
   justify-content: space-between;
@@ -835,6 +928,7 @@ background-color: #ebebeb;
   list-style: none;
   line-height: 21px;
   color: #ffffff;
+  padding-left: 0;
 }
 .filter-option {
   margin-bottom:25px;
@@ -843,6 +937,8 @@ background-color: #ebebeb;
 
 .filter-option label {
   position: relative;
+  cursor: pointer;
+  padding-left: 43px;
 }
 .filter-input-checkbox + label::before {
   content:"";
@@ -850,7 +946,7 @@ background-color: #ebebeb;
   width: 20px;
   height: 20px;
   background-position: top;
-  left: -40px;
+  left: 5px;
   border: 2px solid #ffffff;
   border-radius: 3px;
 }
@@ -864,13 +960,11 @@ background-color: #ebebeb;
   border-top: none;
   border-left: none;
   top: -6px;
-  left: -30px;
+  left: 14px;
 }
 .filter-input-checkbox:disabled {
   color: #bababa;
 }
-
-
 
 .filter-range {
   width: 318px;
@@ -1037,18 +1131,36 @@ background-color: #ebebeb;
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0;
-  margin: 0;
   padding: 0;
   list-style: none;
 }
 
 .social-button {
+  font-size: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 46px;
   height: 48px;
   background-color: #81b3d2;
+}
+.social-button-twitter::after{
+  content:"";
+  background-image: url(../img/tw-icon.svg);
+  width: 17px;
+  height: 15px;
+}
+.social-button-facebook::after{
+  content:"";
+  background-image: url(../img/fb-icon.svg);
+  width:12px;
+  height: 22px;
+}
+.social-button-youtube::after{
+  content:"";
+  background-image: url(../img/youtube-icon.svg);
+  width: 20px;
+  height: 16px;
 }
 
 .social-button:active {
@@ -1062,16 +1174,7 @@ background-color: #ebebeb;
 .social-button:focus {
   background-color: #5496bd;
 }
-
-.social-button:active path {
-  fill: #ffffff;
-}
-
-.social-button:hover path {
-  fill: #ffffff;
-}
-
-.social-button:focus path {
+.social-button:focus::after {
   opacity: 0.3;
 }
 

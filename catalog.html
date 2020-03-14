@@ -18,16 +18,13 @@
           <ul class="site-navigation">
             <li class="site-navigation-item"><a href="info.html">информация</a></li>
             <li class="site-navigation-item"><a href="foto.html">фото и видео</a></li>
-            <li class="site-navigation-item"><div class="right"><a href="map.html">карта штата</a></div></li>
-            <li class="site-navigation-item"><div class="right">
-            <a class="site-navigation-current" href="catalog.html">гостиницы</a></div></li>
+            <li class="site-navigation-item--right"><a href="map.html">карта штата</a></li>
+            <li class="site-navigation-item--right"><a class="site-navigation-current" href="catalog.html">гостиницы</a></li>
           </ul>
          </nav>
       </header>
-    </div>
       <main>
           <h1 class="visually-hidden">Гостиницы</h1>
-       <div class="container">
         <section class="filters">
           <h2 class="visually-hidden">Фильтр отелей</h2>
           <form class="filter" method="get" action="https://echo.htmlacademy.ru">
@@ -86,8 +83,6 @@
           <button class="btn-transparent" type="submit">Показать</button>
        </div>
        </section>
-       </div>
-     <div class="container">
       <section class="hotels">
         <h2 class="visually-hidden">Результат поиска</h2>
         <div class="found-result">
@@ -132,15 +127,8 @@
               </p>
             </div>
             </div>
-
             <div class="hotel-rating">
-              <p class="stars">
-                <img src="img/star.svg" width="18" height="17" alt="звезда">
-                <img src="img/star.svg" width="18" height="17" alt="звезда">
-                <img src="img/star.svg" width="18" height="17" alt="звезда">
-                <img src="img/star.svg" width="18" height="17" alt="звезда">
-              </p>
-              <p class="rating">рейтинг:8,5</p>
+              <p class="stars-rate-four"><span>рейтинг:8,5</span></p>
             </div>
             </li>
             <li class="hotel-offer">
@@ -164,12 +152,7 @@
              </div>
              </div>
              <div class="hotel-rating">
-               <p class="stars">
-                 <img src="img/star.svg" width="18" height="17" alt="звезда">
-                 <img src="img/star.svg" width="18" height="17" alt="звезда">
-                 <img src="img/star.svg" width="18" height="17" alt="звезда">
-               </p>
-               <p class="rating">рейтинг: 8,9</p>
+               <p class="stars-rate-three"><span>рейтинг: 8,9</span></p>
              </div>
              </li>
              <li class="hotel-offer">
@@ -193,57 +176,26 @@
               </div>
               </div>
               <div class="hotel-rating">
-                <p class="stars">
-                  <img src="img/star.svg" width="18" height="17" alt="звезда">
-                  <img src="img/star.svg" width="18" height="17" alt="звезда">
-                </p>
-                <p class="rating">рейтинг: 9,2</p>
+                <p class="stars-rate-two"><span>рейтинг: 9,2</span>
               </div>
               </li>
             </ol>
           </section>
-        </div>
           </main>
-          <div class="container">
           <footer class="main-footer">
               <div class="main-footer-wrapper">
-               <p class="footer-contacts">
-                #visitSEDONA<br>
-                Тел: +7(495) 666-02-66
-               </p>
+               <div class="footer-contacts">
+               <p>#visitSEDONA</p>
+                <a href="тел:+74956660266">Тел: +7(495) 666-02-66</a>
+              </div>
                <div class="footer-social">
                  <ul>
-                  <li><a class="social-button" href="#"><span class="visually-hidden">Твиттер</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                       width="17" height="15" viewBox="0 0 17 15">
-
-                        <path fill="#FFF" d="M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481
-                          2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006
-                           1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887
-                            2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228
-                             1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182
-                             2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z"/>
-                    </svg>
-
-
+                  <li><a class="social-button social-button-twitter" href="#"><span>Twitter</span>
                    </a></li>
-                   <li><a class="social-button" href="#"><span class="visually-hidden">Фейсбук</span>
-                     <svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12
-
-                        22">
-                         <path fill="#FFF" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z"/>
-
-                     </svg>
-
+                   <li><a class="social-button social-button-facebook" href="#"><span>Facebook</span>
                   </a></li>
-                  <li><a  class="social-button" href="#"><span class="visually-hidden">Ютуб</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="16" viewBox="0 0 20 16">
-
-                        <path fill="#FFF" d="M17 0H3C1.35 0 0 1.35 0 3v10c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM6.027 11.998V4.002L15.014 8l-8.987 3.998z"/>
-                    </svg>
-
-
-                  </a></li>
+                  <li><a  class="social-button social-button-youtube" href="#"><span>Youtube</span>
+                </a></li>
                  </ul>
                </div>
               <p class="footer-copyright">

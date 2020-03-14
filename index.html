@@ -18,8 +18,8 @@
           <ul class="site-navigation">
             <li class="site-navigation-item"><a href="info.html">информация</a></li>
             <li class="site-navigation-item"><a href="foto.html">фото и видео</a></li>
-            <li class="site-navigation-item"><div class="right"><a href="map.html">карта штата</a></div></li>
-            <li class="site-navigation-item"><div class="right"><a href="catalog.html">гостиницы</a></div></li>
+            <li class="site-navigation-item--right"><a href="map.html">карта штата</a></li>
+            <li class="site-navigation-item--right"><a href="catalog.html">гостиницы</a></li>
           </ul>
          </nav>
       </header>
@@ -57,27 +57,21 @@
           <li class="advantages-item">
             <h3 class="visually-hidden">Услуги</h3>
             <ul class="services">
-              <li class="service-item">
-                <img src="img/icon-1.svg" width="75" height="72" alt="иконка
-                 жилья">
+              <li class="service-item-housing">
                 <h4>Жилье</h4>
                 <p>Рекомендуем пожить в настоящем<br>
                    мотеле, всё как в кино!
                 </p>
 
               </li>
-              <li class="service-item">
-                <img src="img/icon-3.svg" width="74" height="70" alt="иконка
-                  еды">
+              <li class="service-item-food">
                 <h4>Еда</h4>
                 <p>Всегда заказывайте фирменный бургер,<br>
                    вы не разочаруетесь!
                 </p>
 
               </li>
-              <li class="service-item">
-                <img src="img/icon-2.svg" width="64" height="76" alt="Иконка
-                   сувениров">
+              <li class="service-item-souveniers">
                 <h4>Сувениры</h4>
                 <p>Не только китайского, но и местного<br>
                    производства!
@@ -95,29 +89,23 @@
           </div>
         </div>
           </li>
-         <li class="advantages-item">
-           <div class="description-white">
+         <li class="advantages-item-white">
              <h3>Небольшая<br>площадь</h3>
               <div class="numeration">— №3 —</div>
               <p>Все достопримечательности<br>
                 находятся очень близко</p>
-          </div>
         </li>
-         <li class="advantages-item">
-           <div class="description-white">
+         <li class="advantages-item-white">
              <h3>Красивая<br>дорога</h3>
               <div class="numeration">— №4 —</div>
               <p>Ехать в Седону из Лас-Вегаса совсем<br>
                 не скучно!</p>
-              </div>
         </li>
-        <li class="advantages-item">
-          <div class="description-white">
+        <li class="advantages-item-white">
             <h3>Мало<br>туристов</h3>
               <div class="numeration">— №5 —</div>
               <p>Большинство едет в гранд каньон<br>
                 и толпится там</p>
-          </div>
         </li>
         </ol>
       </section>
@@ -179,7 +167,9 @@
         </section>
           <section class="map">
            <h2 class="visually-hidden">Карта</h2>
-            <p><img src="img/map.jpg" width="1200" height="594" alt="Карта"></p>
+            <p><img src="img/map.jpg" width="1200" height="476" alt="Карта"></p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.18050596735!2d-111.83015794715254!3d34.85437338104664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2slv!4v1584223967277!5m2!1sru!2slv"
+             width="1200" height="476" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
            </section>
 
       </main>
@@ -191,35 +181,12 @@
         </div>
         <div class="footer-social">
           <ul>
-           <li><a class="social-button" href="#"><span class="visually-hidden">Твиттер</span>
-             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                width="17" height="15" viewBox="0 0 17 15">
-                 <path fill="#FFF" d="M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481
-                   2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006
-                    1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887
-                     2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228
-                      1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182
-                      2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z"/>
-             </svg>
-
-
+           <li><a class="social-button social-button-twitter" href="#"><span>Twitter</span>
             </a></li>
-            <li><a class="social-button" href="#"><span class="visually-hidden">Фейсбук</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12
-
-                 22">
-                  <path fill="#FFF" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z"/>
-
-              </svg>
-
-           </a></li>
-           <li><a  class="social-button" href="#"><span class="visually-hidden">Ютуб</span>
-             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="16" viewBox="0 0 20 16">
-                 <path fill="#FFF" d="M17 0H3C1.35 0 0 1.35 0 3v10c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM6.027 11.998V4.002L15.014 8l-8.987 3.998z"/>
-             </svg>
-
-
-           </a></li>
+            <li><a class="social-button social-button-facebook" href="#"><span>Facebook</span>
+            </a></li>
+           <li><a  class="social-button social-button-youtube" href="#"><span>Youtube</span>
+             </a></li>
           </ul>
         </div>
        <p class="footer-copyright">
@@ -235,5 +202,14 @@
     </div>
       </footer>
     </div>
+    <script>
+    var popup=document.querySelector(".reservation");
+    var close=document.querySelector(".button-search");
+    close.addEventListener("click",function (evt){
+      evt.preventDefault();
+    popup.classList.toggle("modal-close");
+    });
+
+    </script>
   </body>
 </html>
