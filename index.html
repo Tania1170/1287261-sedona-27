@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
-    <link href="css/normalize.css" rel="stylescheet">
+    <link href="css/normalize-min.css" rel="stylescheet">
     <link href="css/style-min.css" rel="stylesheet">
   </head>
   <body class="main-page">
@@ -148,22 +148,22 @@
                   </svg>
                 </a>
              </p>
-              <p class="reservation-item-adults">
-                <label for="adults">взрослые:</label>
-                <input id="adults" type="text" name="adults-number" value="2">
-                <button class="less" type="button" aria-label="Убывание">-</button>
-               <button class="more" type="button" aria-label="Возрастание">+</button>
-             </p>
-             <p class="reservation-item-children">
-                <label for="children">дети:
-                </label>
-                <input id="children" type="text" name="children-number" value="0">
-                <button class="less" type="button" aria-label="Убывание">-</button>
-                <button class="more" type="button" aria-label="Возрастание">+</button>
-            </p>
-              <p class="button">
-              <button class="button-find" type="submit">найти</button>
-              </p>
+             <p class="reservation-item-adults">
+               <label for="adults">взрослые:</label>
+               <button class="less" type="button" aria-label="Уменьшить на единицу">-</button>
+               <input id="adults" type="text" name="adults-number" value="2">
+
+              <button class="more" type="button" aria-label="Увеличить на едининцу">+</button>
+
+            <p class="reservation-item-children">
+               <label for="children">дети:
+               </label>
+               <button class="less" type="button" aria-label="Уменьшить на единицу">-</button>
+               <input id="children" type="text" name="children-number" value="0">
+
+               <button class="more" type="button" aria-label="Увеличить на едининцу">+</button>
+           </p>
+
             </form>
           </div>
         </div>

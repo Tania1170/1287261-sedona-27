@@ -768,62 +768,59 @@ h3 {
   font-weight: bold;
 }
 .reservation-item-children label {
-  display:block;
-  width:112px;
-  height: 38px;
-  padding-top: 12px;
-  text-align: left;
-  font: inherit;
-  font-weight: bold;
+      display: block;
+    width: 65px;
+    height: 38px;
+    padding-top: 12px;
+    text-align: left;
+    font: inherit;
+    font-weight: bold;
 
 }
 .reservation-item-adults input {
-box-sizing: border-box;
-outline: none;
-border: 2px solid transparent;
-width: 118px;
-height: 38px;
-padding-left: 52px;
-margin-bottom: 25px;
-background-color: #f2f2f2;
-font: inherit;
-font-size: 14px;
-font-weight: bold;
+    box-sizing: border-box;
+    outline: none;
+    border: 2px solid transparent;
+    width: 40px;
+    height: 38px;
+    padding-left: 0;
+    background-color: #f2f2f2;
+    font: inherit;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
 }
 
 .reservation-item-children input {
-  box-sizing: border-box;
-  outline: none;
-  border: 2px solid transparent;
-  width: 118px;
-  height: 38px;
-  padding-left: 52px;
-  margin-bottom: 25px;
-  background-color: #f2f2f2;
-  font: inherit;
-  font-size: 14px;
-  font-weight: bold;
-
+     box-sizing: border-box;
+    outline: none;
+    border: 2px solid transparent;
+    width: 28px;
+    height: 38px;
+    padding-left: 0;
+    background-color: #f2f2f2;
+    font: inherit;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
 }
 
+
 .reservation-item-adults .less {
-  position: absolute;
-  top: 7px;;
-  left: 123px;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: normal;
+    color: rgba(0,0,0,0.3);
+    width: 44px;
+}
+
+
+.reservation-item-adults .more {
   font-size: 30px;
   line-height: 30px;
   font-weight: normal;
   color: rgba(0,0,0,0.3);
-}
-
-.reservation-item-adults .more {
-  position:absolute;
-  top: 9px;
-  left: 195px;
-  font-size: 26px;
-  line-height: 30px;
-  font-weight: normal;
-  color: rgba(0,0,0,0.3);
+    width: 44px;
 }
 
 .reservation-item-adults .less:hover {
@@ -846,23 +843,21 @@ font-weight: bold;
   position:relative;
 }
 .reservation-item-children .less {
- position:absolute;
-top: 7px;
-left: 75px;
-font-size: 30px;
-line-height: 30px;
-font-weight: normal;
-color: rgba(0,0,0,0.3);
+   font-size: 35px;
+    line-height: 30px;
+    font-weight: normal;
+    color: rgba(0,0,0,0.3);
+    width: 44px;
+    box-sizing: border-box;
 }
 
 .reservation-item-children .more {
-position: absolute;
-top: 9px;
-left: 145px;
-font-size: 26px;
-line-height: 30px;
-font-weight: normal;
-color: rgba(0,0,0,0.3);
+   font-size: 30px;
+    line-height: 30px;
+    font-weight: normal;
+    color: rgba(0,0,0,0.3);
+    width: 44px;
+    box-sizing: border-box;
 }
 .more,
 .less{
