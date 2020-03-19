@@ -215,48 +215,48 @@ a {
 .hotel-offer {
   display: flex;
   margin-left: 0;
-  padding: 30px 73px;
+  padding: 30px 73px 24px 73px;
   width: 1200px;
-  align-items: center;
+  align-items: flex-start;
   border-bottom: 1px solid rgba(0,0,0,0.2);
+    position: relative;
 }
-.hotel-offer div:last-child {
-  margin-left: auto;
-}
+
 .hotel-description {
   display: flex;
   flex-direction: column;
-  height: 91px;
-  width: 261px;
   align-content: center;
   padding-left: 30px;
+
+  max-width: 69%;
 }
 
 .hotel-price {
   display: flex;
   width: 260px;
-  height: 90px;
+  margin-bottom: 17px;
 }
 .hotel-price p {
   width: 130px;
 }
 
 .hotel-image {
-  padding-top: 6px;
+  padding-top: 0;
 }
 
 .button-hotel-offer {
-  display: flex;
-  justify-content: space-between;
-  width: 258px;
-  margin-bottom: 5px;
+      display: flex;
+    justify-content: flex-start;
+    margin-bottom: 5px;
 }
 
 
 .hotel-offer p {
   margin: 0;
 }
-
+.button-hotel-offer .button{
+    margin-right: 7px;
+}
 
  .hotels ol{
    list-style: none;
@@ -269,7 +269,7 @@ a {
   text-align: left;
   padding: 0;
   margin: 0;
-  padding-bottom: 10px;
+  padding-bottom: 6px;
   margin-top: -5px;
   padding-bottom: 8px;
 }
@@ -290,8 +290,12 @@ h2 a:active {
 }
 
 .hotel-rating {
-  text-align: right;
-  height: 90px;
+    text-align: right;
+    height: 90px;
+    position: absolute;
+    right: 69px;
+    top: 30px;
+    width: 120px;
 }
 .stars {
   padding-bottom: 45px;
@@ -459,10 +463,10 @@ h3 {
 .description-illustration{
     width: 100%;
     background-image: url(../img/feature-picture-1.jpg);
-    background-position: center 0;
+    background-position: center -74px;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: #131314;
+    background-color: #81b3d2;
     height: auto;
 }
 .description-illustration--2{
@@ -470,10 +474,11 @@ h3 {
 }
 .advantages-list-white{
     display: flex;
-    padding: 49px 0 44px 0;
+    padding: 0;
     margin: 0;
     align-items: stretch;
     background-color: #eeeeee;
+    flex-wrap: wrap;
 }
 .advantages-item-white {
   display: flex;
@@ -481,6 +486,7 @@ h3 {
   align-items: center;
   text-align: center;
   width: 400px;
+    padding: 49px 0 44px 0;
 }
 
 .numeration {
@@ -609,9 +615,7 @@ h3 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-around;
     align-items: center;
-    min-height: 56px;
     width: 1056px;
 
     background-color: #ffffff;
@@ -620,6 +624,8 @@ h3 {
 .site-navigation-item {
     text-align: left;
     width: 25%;
+    padding-top: 14px;
+    padding-bottom: 16px;
 }
 
  .site-navigation-item--right {
@@ -636,6 +642,7 @@ h3 {
   position: relative;
   background-position: 0 -85px;
   background-repeat: no-repeat;
+    background-color: #858f9a;
 }
 .welcome::after {
     content: "";
@@ -929,11 +936,14 @@ background-color: #ebebeb;
   justify-content: space-between;
   background-image: url(../img/filter-background.jpg);
   width: 100%;
-  height: 216px;
   background-position: 0 -294px;
   background-repeat: no-repeat;
+    background-color: #846a6a;
+    padding-bottom: 6px;
 }
-
+.filter-form{
+    width: 100%;
+}
 .filter {
   display: flex;
   padding-left: 68px;
@@ -959,10 +969,15 @@ background-color: #ebebeb;
   line-height: 21px;
   color: #ffffff;
   padding-left: 0;
+    margin-left: 0;
+
 }
 .filter-option {
   margin-bottom:25px;
   margin-top: 25px;
+    padding-left:0;
+    margin-left: 0;
+
 }
 
 .filter-option label {
@@ -1003,12 +1018,15 @@ background-color: #ebebeb;
   color: #bababa;
 }
 
-.filter-range {
-  width: 318px;
-  color: #ffffff;
-  padding-right: 73px;
-  padding-top: 27px;
+
+ .filter-range {
+    width: 318px;
+    color: #ffffff;
+    padding-right: 0;
+    padding-top: 0;
+    margin-left: 246px;
 }
+
 .filter-range-title{
   margin-bottom: 9px;
   font-weight: bold;
@@ -1199,18 +1217,21 @@ background-color: #ebebeb;
   background-image: url(../img/tw-icon.svg);
   width: 17px;
   height: 15px;
+    display: block;
 }
 .social-button-facebook::after{
   content:"";
   background-image: url(../img/fb-icon.svg);
   width:12px;
   height: 22px;
+    display: block;
 }
 .social-button-youtube::after{
   content:"";
   background-image: url(../img/youtube-icon.svg);
   width: 20px;
   height: 16px;
+    display: block;
 }
 
 .social-button:active {
